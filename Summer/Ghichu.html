@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- format code: shift + alt + f-->
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Autotune</title>
+</head>
+<!-- Cái này nó ngu lắm nên là khi mà comment thì nó auto comment nguyên dòng luôn-->
+
+<body>
+    <a href="https://www.freepik.com/premium-photo/image-colorful-galaxy-sky-generative-ai_37741252.htm"
+        title="Picture for future" target="_blank" alt="Lỗi ảnh ">
+        <!-- Nên chọn cái loại target: mục tiêu , loại blank khi nhấp vào nó ra tab khác như vậy thì nó propesstional hơn -->
+        <img src="Image/image-colorful-galaxy-sky-generative-ai_791316-9864.avif">
+        <!-- Xài bỏ nó trong foder tìm cho nó tiện -->
+    </a>
+    <br>
+
+    <audio autoplay loop controls src="/Audio/Nang-Tinh-Hay-Nhe-Long-Remix-Tong-Gia-Vy-WRC-Remix.mp3"></audio>
+    <!-- Cần pải có cái controls để nó tạo thành cái thanh điều khiển nhạc, thêm nhiều cái ứng dụng nữa là tự động chơi nhạc, vòng lặp, câm mồm(muted) -->
+    <video>
+        Tương tự như trên
+    </video>
+    <!-- Mọi cái này đều cớ điểm chung là khi viết chữ vào trong phần của nó thì nó sẽ đ hiện vd là video-->
+</body>
+<!-- Có 3 dạng list phổ biến: 
+ + Ordered list: Sắp xếp lộn xộn, kiểu nó là dấu chấm tròn đen, trắng, gạch dòng đầu dòng,...
+ + Unorderde list: Sắp xếp theo thứ tự, 123,i ii iii,....
+ + Description list: Tạo ra để giải thích cái tiêu đề của list (Diễn tả )
+ *Lưu ý: là trg cái list nó có những cái ý đúng k thì n~ cái ý thì có thể dùng nó tạo thành cái dạng list 
+-->
+<ul>VD</ul><!-- Cái này ul(unordered list) không theo nguyên tắc sắp xếp cmj hết-->
+<li>Mạnh</li>
+<li>Sơn</li>
+<li>Vinh
+    <ul>
+        <li> Vớ va vớ vẩn</li><!--Có thể trg dòng chú thích luôn-->
+    </ul>
+</li>
+<ol type="a"> Đi học
+    <li>Dậy đánh răng</li> <!-- Gọi nó là cái ol(orderde list ) vì nó có sắp xếp-->
+    <li>Ra lấy xe </li>
+    <li>Tới trường </li>
+</ol>
+<dl> Cmanh
+    <li>Học html</li>
+    <li>Học C</li>
+    <li>Học CNTT</li>
+</dl><!--Diễn tả nó-->
+<!-- Có nhiều loại font,border dùng để -->
+<!-------------------------------------------Cách lm background bằng ảnh ------------------------------------------------------>
+<!--
+    body {
+    background-image: url(Image/image-colorful-galaxy-sky-generative-ai_791316-9864.avif); lấy cái ảnh làm nền trg cái url 
+    background-repeat: no-repeat; tránh lặp lại cái ảnh kiểu nó chia 2 màn hình ra trên dưới xong r lại trên 1 ảnh dưới 1 ảnh nữa
+    background-attachment: fixed; cái này thì cho cái ảnh đó nó kéo dài xuống dưới nè 
+    background-position: center; Canh giữa
+    background-size: cover; Cho nó che toàn màn hình
+}-->
+
+Có 2 cái là magin và padding pải phân biệt rõ : 
++ Magin là khoảng không bao quanh nó tính từ cái khung đến nó (để cho nó 1 cái chỗ trong cái web)
++ Padding là khoảng cách giữa phần nội dung và đg viền(cái border)
+2 cái này rất dễ là lộn nên mình pải phân biệt đc nó  
+<!-- Để mà chữ nó or hình ảnh nó dính sát vs cái khung của cái chorme thì xài trg body cái magin:0px là tự dính vô luôn -->
+
++ Position: static -> lm cái thành phần đó luôn đc thay đổi theo cái khung của web
++ Position: relative -> lm nó ko thay đổi theo cái web
++ Position: fixed -> lm cái đó nó kiểu đc ghim tại cái vị trí đó luôn 
++ Position: absolute -> khi nào gán cái absolute này thì nó là con của 1 phần tử nào đó,song nó nếu nó ko có phần tử cha
+ thì nó sẽ lấy từ cái phần body lm cha, khi nào áp cái đặc tính này vào thì nó sẽ sẽ đc ghi đè kiểu chèn đè trên cái thg
+ cha nó
++ Position: sicky -> nó dính vào màn hình cho mình lăn chuột (top,left,bottom,right)
+
++ text-shadow: lm cái bóng cho chữ, gồm các giá trị x px,y px , z px , color
+ x px: nếu là số dương thì nó đi pải , âm thì nó đi trái
+ y px:  nếu là số dương thì nó đi xuống , âm thì nó đi lên
+ z px: cái này nó ko pải là trục z mà lm độ bóng nó sát vs cái chữ hơn (mờ hơn) số càng cao càng mờ 
++ bos-shadow: lm cái khung cho cái chữ mà chỉ có left bottom thôi, gồm các giá trị x px,y px , z px , color
+Tương tự như text-shadow 
+Note: 2 cái này nó có thể add nhiều màu sắc để lm đc cái đó thì cái px của cái trước pải nhỏ hơn cái sau
+và cái z px nó pải giống nhau:
+ví dụ: box-shadow: 10px 10px 10px red, 15px 15px 10px yellow ,20px 20px 10px blue;
+</html>

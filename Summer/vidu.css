@@ -1,0 +1,111 @@
+body {
+  margin: 10px;
+  background: linear-gradient(to right, #8e9eab, #eef2f3);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Các thuộc tính của transform:
+translateX() hoặc translateY() dịch chuyển phần tử theo chiều x hoặc y (có cả z nữa nếu là 3d)
+rotateX(180deg) hoặc rotateY(180deg) xoay chuyển theo trục x y (có cả z nữa nếu là 3d)
+scaleX(1) hoặc scaldeY(2) kéo dài gấp n của cái đối tượng theo chiều x y (tăng tỉ lệ lên kiểu 1 (giữ nguyên)
+2 gấp đôi 3 gấp 3 tăng dần lên)
+skewX(40deg) hoặc skewY(40deg) nghiêng theo chiều x hoặc y 
+ có thể viết gộp lại vừa x,y luôn translate(),rotate,scale(),skew()
+
+ matrix(1,0,0,1,0,0) dùng để gộp lại những cái trên vô 1 cái (propesstional)
+scleX()
+skewY()
+skewX()
+sclaeY()
+translateX()
+translateY()
+Theo các thứ tự này 
+*/
+.container {
+  background-color: burlywood;
+  height: 42px;
+  margin: -10px;
+}
+
+.logo,
+.content {
+  color: black;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+}
+
+.logo img {
+  width: 44px;
+  height: 33px;
+  margin-top: 5px;
+  margin-left: 12px;
+}
+
+.content {
+  position: fixed;
+  display: flex;
+  top: -11px;
+  right: -7px;
+  justify-content: space-between;
+  padding: 24px 15px 17px 15px;
+  line-height: 16px;
+}
+
+.content a {
+  border-right: solid white 3px;
+  padding-inline: 8px;
+}
+
+a {
+  padding-right: 20px;
+  text-decoration: none;
+  color: cadetblue;
+  justify-content: space-between;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: steelblue;
+  font-size: 35px;
+}
+
+#text {
+  color: rgb(225 225 225 0.1);
+}
+
+/* ===============================================Animation===============================================
++ Sử dụng cái từ khóa @keyframes trong css + một cái tên(tự nghĩ ra cái tên của cái animation đó) 
+- Trong cái container đó viết dòng animation:tên animation(tên của cái keyframes)
+Tg chạy animation: animation-duration
+Vòng lặp: animation-interation-count: số lần lặp or infinite
+Mở web lên tự chạy animation hay ko -> animation-play-state:running or paused
+Độ trễ: animation-delay 
+*/
+.tauhu img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 22px 1px;
+  border: solid 2px whitesmoke;
+  border-radius: 26px;
+  box-shadow: 8px 9px 13px green;
+}
+
+.property li {
+  margin-bottom: 4px;
+  font-size: 32px;
+}
+
+.below-container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+}
+
+.property {
+  align-content: center;
+}
