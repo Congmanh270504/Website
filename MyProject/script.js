@@ -1,4 +1,4 @@
-var colore = ["red", "organe", "yellow", "black"];
+var myColor = ["red", "organe", "yellow", "black"];
 
 
 // // color.unshift("white");// Thêm vào đầu array
